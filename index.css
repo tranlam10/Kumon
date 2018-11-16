@@ -1,0 +1,31 @@
+form {
+    padding: 20px;
+}
+
+legend {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.container {
+    box-sizing: border-box;
+}
+
+.card {
+    padding: 10px;
+    background-color: lightblue;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+input {
+    width: 90px;
+}
+
+button {
+    margin: 25px 0;
+}
