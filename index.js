@@ -12,6 +12,7 @@ function formSubmit() {
             console.log(rightAnswer);
 
             if (userAnswer === rightAnswer) {
+                $('input[name="' + QUESTIONS[i].number + '"]').css('color', 'green');
                 score++;
             } else {
                 $('input[name="' + QUESTIONS[i].number + '"]').css('color', 'red');
