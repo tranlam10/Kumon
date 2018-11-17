@@ -13,9 +13,17 @@ function formSubmit() {
 
             if (userAnswer === rightAnswer) {
                 score++;
+            } else {
+                $('input[name="' + QUESTIONS[i].number + '"]').css('color', 'red');
             }
         }
-        $('.score').html(`${score}/${QUESTIONS.length}`);
+        if (score === QUESTIONS.length) {
+            $('.score').html(`${score}/${QUESTIONS.length} Perfect!`);
+        } else {
+            alert("The answers in red are incorrect. Please correct the mistakes and resubmit.");
+            $('.score').html(`${score}/${QUESTIONS.length}`);
+        }
+        score = 0;
     });
 }
 
